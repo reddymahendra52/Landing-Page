@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('https://gratisography.com/wp-content/uploads/2018/09/gratisography-267H-1170x780.jpg');
+    background-size: cover;
+}
+#heading {
+    margin-top: 18%;
+    color: white;
+    font-size: 6rem;
+    text-decoration-style: dashed;
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    font-size: x-large;
+}
+ul{
+    display: contents;
+    list-style-type: none;
+}
+.bottom-nav {
+    top: 0;
+    position: fixed;
+    bottom: auto;
+}
+.first {
+    width: 100%;
+    height: auto;
+    background-image: url('../images/back.png');
+    background-size: cover;
+}
+#intro{
+    margin-top: 4%;
+    margin-left: 1%;
+    font-size: xx-large;
+    color: #ffffff;
+    width: 50%;
+    text-align: justify;
+}
+#intro-img{
+    width: 48%;
+    margin-top: 7%;
+    margin-left: 1%;
+}
+#intro-img>img{
+        width: 96%;
+        height: 76vh;
+}
+.product-box{
+        display: inline-block;
+        width: 23%;
+        border: 1px solid black;
+        height: 63vh;
+        margin-top: 7%;
+        margin-left: 18px;
+}
+.container-fluid > #second-box{
+    height: auto;
+}
+.second-img{
+    height: 100%;
+    opacity: 0.6;
+}
+.second{
+    background-color: #f5f5f5;
+}
+.second-img:hover{
+    opacity: 1;
+}
+h1{
+    font-size: xx-large;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+.btn{
+    margin-top: 1%;
+}
+.grid{
+    display: flex;
+    margin: 4% 16% auto;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    width: 17%;
+    height: 20vh;
+    color: orange;
+}
+.icon > i{
+    font-size: 7rem;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3%;
+    width: 78%;
+}
+.desc > p{
+    font-size: x-large;
+}
+#footer{
+    max-width: 100%;
+}
+
+#form{
+    width: 50%;
+    margin: 0 auto;
+}
+.form-group {
+    margin: auto;
+    text-align: center;
+}
+#submit{
+    margin: 2% auto;
+}
+.final{
+    max-width: 100%;
+    background: linear-gradient(35deg, blue, transparent, gray, blue);
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+}
+.final>a{
+    padding: 0 7% 0 7%;
+}
+@media screen and (max-width:1100px){
+    #intro{
+        font-size: larger;
+    }
+    .product-box{
+        width: 22%;
+        height: 55vh;
+    }
+    .grid{
+        grid-gap: 5%;
+    }
+    #heading{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width:568px) {
+    #nav-bar {
+        font-size: medium;
+        max-width: 100%;
+        height: 8vh;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+    }
+    header,img{
+        height: 50vh;
+    }
+    #row{
+        display: grid;
+    }
+    #intro{
+        width: 98%;
+        font-size: large;
+    }
+    #intro-img{
+        width: 100%;
+    }
+    #intro-img>img{
+        width: 98%;
+        height: auto;
+    }
+    .second{
+        height: 250vh;
+    }
+    #second-box{
+        display: grid;
+        grid-gap: 4%;
+    }
+    .product-box {
+        width: 95%;
+        border: 1px solid black;
+        height: 50vh;
+        margin-top: 7%;
+        margin:auto;
+    }
+    .grid {
+        display: flex;
+        margin: 4% 5% auto;
+        grid-gap: 5%;
+    }
+    .icon>i {
+        font-size: 4rem;
+    }
+    .desc>p {
+        font-size: large;
+    }
+    .desc>h1{
+        font-size: 2rem;
+    }
+    .final{
+        font-size: xx-large;
+    }
+    #heading{
+        font-size: 4rem;
+    }
+}
